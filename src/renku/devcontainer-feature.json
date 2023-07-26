@@ -1,0 +1,20 @@
+{
+    "name": "Renku CLI",
+    "id": "renku",
+    "version": "1.0.0",
+    "description": "Provides the Renku CLI",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "2.6.1",
+                "2.5.0"
+            ],
+            "default": "2.6.1",
+            "description": "Select the Renku CLI version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/python"
+    ]
+}
