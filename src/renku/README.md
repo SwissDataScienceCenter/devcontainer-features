@@ -1,15 +1,13 @@
 
-# Hello, World! (hello)
+# Renku CLI (renku)
 
-A hello world feature
+Provides the Renku CLI
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
-        "version": "latest"
-    }
+    "ghcr.io/rokroskar/renku-devcontainer-feature/renku:1": {}
 }
 ```
 
@@ -17,10 +15,10 @@ A hello world feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| version | Select the Renku CLI version | string | 2.6.1 |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/rokroskar/renku-devcontainer-feature/blob/main/src/renku/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
