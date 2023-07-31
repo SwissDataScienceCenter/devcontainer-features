@@ -61,7 +61,7 @@ $nanolayer_location \
     "ghcr.io/devcontainers-contrib/features/pipx-package:1" \
     --option package="renku" --option version="$VERSION"
 
-# Determine the appropriate non-root user
+# Determine the appropriate user
 if [ "${USERNAME}" = "auto" ] || [ "${USERNAME}" = "automatic" ]; then
     USERNAME=""
     POSSIBLE_USERS=("vscode" "node" "codespace" "$(awk -v val=1000 -F ":" '$3==val{print $1}' /etc/passwd)")
@@ -75,3 +75,7 @@ elif ! id -u "${USERNAME}" >/dev/null 2>&1 && [ "$CREATEUSER" = "true" ]; then
     useradd -l -m -s /bin/bash -N -u 1000 "${USERNAME}"
 fi
 
+# install jupyter
+if [ "${INSTALLJUPYTER}" = "true" ]; then
+    mamba install jupyterlab
+fi

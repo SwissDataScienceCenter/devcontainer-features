@@ -18,6 +18,11 @@
             "type": "boolean",
             "default": true,
             "description": "Whether to create the chosen user if missing."
+        },
+        "installJupyter": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install the Jupyter stack."
         }
     },
     "installsAfter": [

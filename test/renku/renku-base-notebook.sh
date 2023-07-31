@@ -9,6 +9,9 @@ source dev-container-features-test-lib
 # The 'check' command comes from the dev-container-features-test-lib.
 check "renku is installed" bash -c "renku | grep 'Check common Renku commands'"
 
+# check that the user is indeed jovyan
+check "user is jovyan" bash -c "whoami | grep jovyan"
+
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
 reportResults
