@@ -2,16 +2,22 @@
     "name": "Renku CLI",
     "id": "renku",
     "version": "1.0.0",
-    "description": "Provides the Renku CLI",
+    "description": "Provides the Renku CLI and supporting packages.",
     "options": {
         "version": {
             "type": "string",
             "proposals": [
+                "latest",
                 "2.6.1",
                 "2.5.0"
             ],
-            "default": "2.6.1",
+            "default": "latest",
             "description": "Select the Renku CLI version"
+        },
+        "createUser": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to create the chosen user if missing."
         }
     },
     "installsAfter": [
