@@ -1,7 +1,7 @@
 
 # Renku CLI (renku)
 
-Provides the Renku CLI
+Provides the Renku CLI and supporting packages.
 
 ## Example Usage
 
@@ -15,7 +15,9 @@ Provides the Renku CLI
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the Renku CLI version | string | 2.6.1 |
+| version | Select the Renku CLI version | string | latest |
+| createUser | Whether to create the chosen user if missing. | boolean | true |
+| installJupyter | Install the Jupyter stack. | boolean | true |
 
 
 
