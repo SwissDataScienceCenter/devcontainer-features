@@ -11,6 +11,7 @@ source dev-container-features-test-lib
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
 check "renku is installed" bash -c "renku | grep 'Check common Renku commands'"
+check "git-lfs is installed" bash -c "git lfs | grep 'git lfs <command>'"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.

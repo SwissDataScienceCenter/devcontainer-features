@@ -21,7 +21,7 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
         "ghcr.io/devcontainers/features/python:1": {
 			"version": "3.10"
-		},
+		}
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"

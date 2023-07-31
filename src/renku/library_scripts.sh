@@ -168,7 +168,7 @@ ensure_nanolayer() {
         else
             echo "No binaries compiled for non-x86-linux architectures yet: $(uname -m)"
             exit 1
-        fi
+        fi  
     fi
 
     # Expose outside the resolved location

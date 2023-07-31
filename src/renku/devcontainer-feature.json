@@ -16,6 +16,9 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/pipx-package",
-        "ghcr.io/devcontainers/features/python"
+        "ghcr.io/devcontainers/features/python",
+        "ghcr.io/rocker-org/devcontainer-features/miniforge",
+        "ghcr.io/devcontainers/features/git",
+        "ghcr.io/devcontainers/features/git-lfs"
     ]
 }
