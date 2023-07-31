@@ -1,7 +1,7 @@
 {
     "name": "Renku CLI",
     "id": "renku",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Provides the Renku CLI and supporting packages.",
     "options": {
         "version": {
