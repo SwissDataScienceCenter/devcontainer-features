@@ -1,8 +1,15 @@
 {
     "renku": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "image": "mcr.microsoft.com/devcontainers/python:3.10",
         "features": {
             "renku": {}
         }
+    },
+    "renku-base-notebook": {
+        "image": "jupyter/base-notebook:python-3.10",
+        "features": {
+            "renku": {}
+        },
+        "remoteUser": "jovyan"
     }
 }

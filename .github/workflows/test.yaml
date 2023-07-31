@@ -16,6 +16,7 @@ jobs:
           - renku
         baseImage:
           - python:3.10
+          - mcr.microsoft.com/devcontainers/python:3.10
           # - ubuntu:latest
           # - mcr.microsoft.com/devcontainers/base:ubuntu
     steps:
