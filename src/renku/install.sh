@@ -1,6 +1,6 @@
 #!/bin/bash -i
 set -e
- 
+
 USER_ID=1000
 USERNAME=${USERNAME:-${_REMOTE_USER:-"automatic"}}
 
@@ -78,4 +78,5 @@ fi
 # install jupyter
 if [ "${INSTALLJUPYTER}" = "true" ]; then
     /opt/conda/bin/mamba install -y jupyterlab
+    ln -sf /opt/conda/bin/jupyter-server /opt/conda/bin/jupyter-notebook
 fi

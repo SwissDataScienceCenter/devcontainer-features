@@ -7,7 +7,11 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "renku is installed" bash -c "renku | grep 'Check common Renku commands'"
+check "renku is available" bash -c "renku --help"
+check "git-lfs is available" bash -c "git lfs --help"
+check "conda is available" bash -c "conda --version"
+check "/opt/conda/bin is on PATH" bash -c "grep -q '/opt/conda/bin' <<< '$PATH'"
+check "jupyter notebook works" bash -c "jupyter notebook --help"
 
 # check that the user is indeed jovyan
 check "user is jovyan" bash -c "whoami | grep jovyan"
