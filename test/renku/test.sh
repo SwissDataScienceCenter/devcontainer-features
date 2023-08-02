@@ -12,6 +12,8 @@ source dev-container-features-test-lib
 # check <LABEL> <cmd> [args...]
 check "renku is installed" bash -c "renku | grep 'Check common Renku commands'"
 check "git-lfs is installed" bash -c "git lfs | grep 'git lfs <command>'"
+check "conda is available" bash -c "conda --version"
+check "/opt/conda/bin is on PATH" bash -c "grep -q '/opt/conda/bin' <<< '$PATH'"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.

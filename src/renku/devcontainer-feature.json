@@ -31,5 +31,10 @@
         "ghcr.io/rocker-org/devcontainer-features/miniforge",
         "ghcr.io/devcontainers/features/git",
         "ghcr.io/devcontainers/features/git-lfs"
-    ]
+    ],
+    "containerEnv": {
+		"CONDA_DIR": "/opt/conda",
+		"CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+		"PATH": "/opt/conda/bin:${PATH}"
+	}
 }
