@@ -77,5 +77,5 @@ fi
 
 # install jupyter
 if [ "${INSTALLJUPYTER}" = "true" ]; then
-    /opt/conda/bin/mamba install jupyterlab
+    /opt/conda/bin/mamba install -y jupyterlab
 fi
