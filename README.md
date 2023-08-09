@@ -1,3 +1,5 @@
-# Renku Dev Container Feature
+# Renku project devcontainer features
 
-The renku devcontainer feature installs the Renku CLI and supporting packages like git and git-lfs. 
+A set of devcontainer features for easier runtime configurations.
+
+* [renku](src/renku/) (installs the renku CLI and supporting packages)
