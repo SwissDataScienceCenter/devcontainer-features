@@ -6,9 +6,9 @@ USERNAME=${USERNAME:-${_REMOTE_USER}}
 
 echo "Activating feature Renku"
 
-VERSION=${VERSION:-undefined}
+VERSION=${VERSION:-"latest"}
 if [ "${VERSION}" = "latest" ]; then
-    VERSION=$(git ls-remote --tags "https://github.com/swissdatasciencecenter/renku-python" | grep -oP "tags/v\K[0-9]+\.[0-9]+\.[0-9]$" | sort -rV | head -n 1)
+    VERSION=$(curl -s https://pypi.org/pypi/renku/json | jq '.releases | keys | sort | .[]'  | grep -oP "\"[0-9]+\.[0-9]+\.[0-9]\"" | tr -d '"' | sort -rV | head -n 1)
 fi
 echo "The requested version is: $VERSION"
 
@@ -25,3 +25,5 @@ fi
 
 pip install pipx
 pipx install renku==${VERSION}
+
+chown -R ${USERNAME} /usr/local/py-utils
