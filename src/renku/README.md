@@ -7,7 +7,7 @@ Provides the Renku CLI and supporting packages.
 
 ```json
 "features": {
-    "ghcr.io/rokroskar/renku-devcontainer-feature/renku:1": {}
+    "ghcr.io/SwissDataScienceCenter/devcontainer-features/renku:1": {}
 }
 ```
 
@@ -23,4 +23,4 @@ Provides the Renku CLI and supporting packages.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/rokroskar/renku-devcontainer-feature/blob/main/src/renku/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/SwissDataScienceCenter/devcontainer-features/blob/main/src/renku/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
