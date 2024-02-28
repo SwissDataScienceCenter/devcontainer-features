@@ -26,6 +26,11 @@
         }
     },
     "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "username": "jovyan",
+            "userUid": 1000,
+            "userGid": 100
+        },
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
             "packages": "build-essential,bzip2,ca-certificates,curl,gpg-agent,gnupg,libglib2.0-0,libsm6,libxext6,libxrender1,rclone,tini,wget,vim,jq"
         },
