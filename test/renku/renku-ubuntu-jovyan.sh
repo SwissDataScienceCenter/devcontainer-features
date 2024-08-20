@@ -7,7 +7,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "renku is available" bash -c "renku --help"
+check "renku is available" bash -c "rnk --help"
 check "git-lfs is available" bash -c "git lfs --help"
 check "conda is available" bash -c "conda --version"
 check "/opt/conda/bin is on PATH" bash -c "grep -q '/opt/conda/bin' <<< '$PATH'"
