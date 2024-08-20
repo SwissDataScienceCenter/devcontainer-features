@@ -10,7 +10,7 @@ source dev-container-features-test-lib
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
-check "renku is installed" bash -c "renku | grep 'Check common Renku commands'"
+check "renku is installed" bash -c "rnk | grep 'command line interface to the Renku platform'"
 check "git-lfs is installed" bash -c "git lfs | grep 'git lfs <command>'"
 check "conda is available" bash -c "conda --version"
 check "/opt/conda/bin is on PATH" bash -c "grep -q '/opt/conda/bin' <<< '$PATH'"

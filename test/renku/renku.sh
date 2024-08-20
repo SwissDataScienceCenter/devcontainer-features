@@ -7,7 +7,7 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "renku is installed" bash -c "renku | grep 'Check common Renku commands'"
+check "renku is installed" bash -c "rnk | grep 'command line interface to the Renku platform'"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
