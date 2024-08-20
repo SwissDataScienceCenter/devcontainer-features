@@ -23,7 +23,7 @@ if [ "${INSTALLJUPYTER}" = "true" ]; then
     ln -sf /opt/conda/bin/jupyter-server /opt/conda/bin/jupyter-notebook
 fi
 
-pip install pipx
-pipx install renku==${VERSION}
+# install the renku CLI
+curl -sfSL https://raw.githubusercontent.com/SwissDataScienceCenter/renku-cli/main/install.sh | bash
 
 chown -R ${USERNAME} /usr/local/py-utils
