@@ -19,11 +19,10 @@ fi
 
 # install jupyter
 if [ "${INSTALLJUPYTER}" = "true" ]; then
-    /opt/conda/bin/mamba install -y jupyterlab
+    /opt/conda/bin/mamba install -y jupyterlab jupyter-server-proxy
     ln -sf /opt/conda/bin/jupyter-server /opt/conda/bin/jupyter-notebook
 fi
 
-pip install pipx
 pipx install renku==${VERSION}
 
 chown -R ${USERNAME} /usr/local/py-utils
