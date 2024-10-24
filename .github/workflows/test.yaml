@@ -15,7 +15,7 @@ jobs:
         features:
           - renku
         baseImage:
-          - python:3.10
+          - python:3.10.15
           - mcr.microsoft.com/devcontainers/python:3.10
           - ubuntu:focal
           - mcr.microsoft.com/devcontainers/base:ubuntu
