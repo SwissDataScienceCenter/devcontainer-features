@@ -23,6 +23,6 @@ if [ "${INSTALLJUPYTER}" = "true" ]; then
     ln -sf /opt/conda/bin/jupyter-server /opt/conda/bin/jupyter-notebook
 fi
 
-pipx install renku==${VERSION}
+/usr/local/py-utils/bin/pipx install renku==${VERSION}
 
 chown -R ${USERNAME} /usr/local/py-utils
