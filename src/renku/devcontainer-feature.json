@@ -31,7 +31,8 @@
         },
         "ghcr.io/devcontainers/features/python:1": {                                                             
             "version": "3.10.15",
-            "installTools": false                                                                                    
+            "installTools": true,
+            "toolsToInstall": "pipx"                                                                                    
         },
         "ghcr.io/rocker-org/devcontainer-features/miniforge:1": {},
         "ghcr.io/devcontainers/features/git:1": {},
