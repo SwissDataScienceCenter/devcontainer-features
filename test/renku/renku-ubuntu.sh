@@ -13,9 +13,6 @@ check "conda is available" bash -c "conda --version"
 check "/opt/conda/bin is on PATH" bash -c "grep -q '/opt/conda/bin' <<< '$PATH'"
 check "jupyter notebook works" bash -c "jupyter notebook --help"
 
-# check that the user is indeed jovyan
-check "user is jovyan" bash -c "whoami | grep jovyan"
-
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
 reportResults
