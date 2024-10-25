@@ -13,7 +13,7 @@ fi
 echo "The requested version is: $VERSION"
 
 # create the user if missing
-if ! id -u "${USERNAME}" >/dev/null 2>&1 && [ "$CREATEUSER" = "true" ] && ! getent 1000 passwd ; then
+if ! id -u "${USERNAME}" >/dev/null 2>&1 && [ "$CREATEUSER" = "true" ] && ! getent passwd 1000 ; then
     useradd -l -m -s /bin/bash -N -u 1000 "${USERNAME}"
 fi
 
