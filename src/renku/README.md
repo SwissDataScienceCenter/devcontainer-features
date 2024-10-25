@@ -16,7 +16,7 @@ Provides the Renku CLI and supporting packages.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the Renku CLI version | string | latest |
-| createUser | Whether to create the chosen user if missing. | boolean | true |
+| createUser | Create the chosen user if missing. | boolean | true |
 | installJupyter | Install the Jupyter stack. | boolean | true |
 
 
