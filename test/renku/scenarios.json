@@ -8,18 +8,10 @@
         },
         "remoteUser": "jovyan"
     },
-    "renku-ubuntu-jovyan": {
+    "renku-ubuntu": {
         "image": "ubuntu",
         "features": {
             "renku": {}
-        },
-        "remoteUser": "jovyan"
-    },
-    "renku-ubuntu-randomUser": {
-        "image": "ubuntu",
-        "features": {
-            "renku": {}
-        },
-        "remoteUser": "randomUser"
+        }
     }
 }
