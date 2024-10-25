@@ -2,22 +2,16 @@
     "renku-base-notebook": {
         "image": "jupyter/base-notebook:python-3.10",
         "features": {
-            "renku": {}
+            "renku": {
+                "createUser": false
+            }
         },
         "remoteUser": "jovyan"
     },
-    "renku-ubuntu-jovyan": {
+    "renku-ubuntu": {
         "image": "ubuntu",
         "features": {
             "renku": {}
-        },
-        "remoteUser": "jovyan"
-    },
-    "renku-ubuntu-randomUser": {
-        "image": "ubuntu",
-        "features": {
-            "renku": {}
-        },
-        "remoteUser": "randomUser"
+        }
     }
 }

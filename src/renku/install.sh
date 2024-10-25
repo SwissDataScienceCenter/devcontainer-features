@@ -13,17 +13,16 @@ fi
 echo "The requested version is: $VERSION"
 
 # create the user if missing
-if ! id -u "${USERNAME}" >/dev/null 2>&1 && [ "$CREATEUSER" = "true" ]; then
+if ! id -u "${USERNAME}" >/dev/null 2>&1 && [ "$CREATEUSER" = "true" ] && ! getent passwd 1000 ; then
     useradd -l -m -s /bin/bash -N -u 1000 "${USERNAME}"
 fi
 
 # install jupyter
 if [ "${INSTALLJUPYTER}" = "true" ]; then
-    /opt/conda/bin/mamba install -y jupyterlab
+    /opt/conda/bin/mamba install -y jupyterlab jupyter-server-proxy
     ln -sf /opt/conda/bin/jupyter-server /opt/conda/bin/jupyter-notebook
 fi
 
-pip install pipx
-pipx install renku==${VERSION}
+/usr/local/py-utils/bin/pipx install renku==${VERSION}
 
 chown -R ${USERNAME} /usr/local/py-utils
