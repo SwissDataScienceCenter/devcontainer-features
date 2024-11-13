@@ -8,7 +8,7 @@
         "ghcr.io/devcontainers-extra/features/vscode-cli:1": {
             "version": "1.95.2"
         }
-    }
+    },
     "init": true,
-    "entrypoint": "tini -- code serve-web --server-base-path \"$RENKU_BASE_URL_PATH/\" --without-connection-token --host 0.0.0.0 --port 8888"
+    "entrypoint": "code serve-web --server-base-path \"$RENKU_BASE_URL_PATH/\" --without-connection-token --host 0.0.0.0 --port 8888"
 }

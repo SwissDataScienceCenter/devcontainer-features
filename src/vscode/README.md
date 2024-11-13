@@ -1,7 +1,7 @@
 
-# Renku CLI (renku)
+# VSCode frontend for Renku sessions
 
-Installs vscode for running in Renku.
+Installs VSCode for running in Renku.
 
 ## Example Usage
 
