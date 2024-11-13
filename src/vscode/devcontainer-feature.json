@@ -1,0 +1,14 @@
+{
+    "name": "VSCode frontend for Renku",
+    "id": "vscode",
+    "version": "1.0.0",
+    "description": "Installs vscode and sets the correct entrypoint for running on Renku.",
+    "options": {},
+    "dependsOn": {
+        "ghcr.io/devcontainers-extra/features/vscode-cli:1": {
+            "version": "1.95.2"
+        }
+    },
+    "init": true,
+    "entrypoint": "code serve-web --server-base-path \"$RENKU_BASE_URL_PATH/\" --without-connection-token --host 0.0.0.0 --port 8888"
+}

@@ -35,6 +35,7 @@ jobs:
       matrix:
         features:
           - renku
+          - vscode
     steps:
       - uses: actions/checkout@v3
 
